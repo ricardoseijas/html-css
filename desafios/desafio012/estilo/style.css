@@ -8,7 +8,10 @@
     margin: 0px;
     padding: 0px;
 }
-
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
 :root {
     --fonte_titulo: 'Passion One', cursive;
     --fonte_padrão: 'Sriracha', cursive;
@@ -25,61 +28,59 @@ header {
 header > h1 {
     font-size: 3.4em;
     font-weight: 600;
-    padding: 3px;
+    padding-top: 50px;
+    font-variant: small-caps;
   
 }
-
-h1 > span {font-size: 1.4em}
-
 header > p {
+    padding-bottom: 50px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em
     
 }
 
-header > p > a {
+header a, footer a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
-header > p > a:hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
-article > p {
-    font-family: var(--fonte_padrão);
-    font-size: 1.65em;
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
     padding-left: 30px;
-    padding-top: 70px;}
-
-div {
-    background-color: black;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    padding: 10px;
-margin-top: 30px;
 }
 
-#fundo01 {background-image: url('imagens/background001.jpg');}
+section.normal {
+    background-color: white;
+    color: black;
+}
 
-#fundo02 {background-image: url('imagens/background002.jpg');}
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
 
-div > p {
-    padding-left: 30px;
-    font-family: var(--fonte_padrão);
-    font-size: 1.5em;
-   color: white;
-   width: 300px;
-    background-color: rgba(0, 0, 0, 0.295)}
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.253);
+
+}
+
+
+
+
+
 
 footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 40px;
+    padding: 10px;
     background-color: black;
     color: white;
     text-align: center;
-    font-size: 1.2em;
-margin-top: 40px;}
+    font-size: 1.2em;}
