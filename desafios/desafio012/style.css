@@ -51,8 +51,33 @@ article > p {
     font-family: var(--fonte_padrão);
     font-size: 1.65em;
     padding-left: 30px;
-    padding-top: 70px;
+    padding-top: 70px;}
 
-
-
+div {
+    background-color: black;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 10px;
+    margin-top: 30px;
 }
+
+#fundo01 {background-image: url('imagens/background001.jpg');}
+
+#fundo02 {background-image: url('imagens/background002.jpg');}
+
+div > p {
+    padding-left: 30px;
+    font-family: var(--fonte_padrão);
+    font-size: 1.5em;
+   color: white;
+   width: 300px;
+    background-color: rgba(0, 0, 0, 0.295)}
+
+footer {padding: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+margin-top: 40px;}
